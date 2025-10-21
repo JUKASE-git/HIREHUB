@@ -519,3 +519,82 @@ color: #5b9aff;
 .hide{
     display: none;
 }
+
+.main-aboutus{
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 9%;
+}
+
+.main-aboutus h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.main-aboutus .team{
+    width: 100%;
+    min-height: 80dvh;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team .members{
+    width: 90%;
+    margin: 1%;
+    border-radius: 10px;
+    padding: 1%;
+    min-height: 100px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+
+.members .img{
+    width: 8%; 
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 2%;
+    color:#000
+}
+
+
+.members .teams-desc{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.faq-main{
+    width: 100%;
+    min-height: 100dvh;
+    background-image: url("../img/background2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.faqs{
+    width: 100%;
+    padding: 10%;
+    background-color: #0c2245;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.quests{
+    width: 90%;
+    background-color: #13366e;
+    padding: 10%;
+    margin: 1%;
+}
