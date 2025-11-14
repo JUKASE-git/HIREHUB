@@ -1,0 +1,122 @@
+<?php 
+    session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <?php include '../php/header.php'; ?>
+    <div class="cover-modal" id="cover-modal">
+        <button class="close" id="close" onclick="fecharModal()">X</button>
+        <div class="modal login" id="login">
+            <form action="../php/log.php" method="post">
+                <h1>Login</h1>
+                <label for="user">Insira seu usuario</label>
+                <input type="text" name="user" id="user" class="input user" placeholder="Usuário" required />
+                <label for="pass"> Insira sua senha</label>
+                <input type="password" name="pass" id="pass" class="input pass" placeholder="Senha" required />
+                <input type="submit" class="submit">
+            </form>
+        </div>
+        <div class="modal">
+            <form action="../php/cadas.php" method="post">
+                <h1>Cadastro</h1>
+                <label for="user">Insira seu usuario</label>
+                <input type="text" name="user" id="user" class="input user" placeholder="Usuário" required />
+                <label for="pass"> Insira sua senha</label>
+                <input type="password" name="pass" id="pass" class="input pass" placeholder="Senha" required />
+                <label for="confPass"> Confirme sua senha</label>
+                <input type="password" name="confPass" id="confPass" class="input pass" placeholder="Senha" required />
+                <label for="creator" class="lblcheck">Empresa</label>
+                <input type="checkbox" name="creator" id="check" class="check">
+                <input type="submit" class="submit">
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    <main class="main-aboutus">
+        <h1>Nossa Equipe</h1>
+        <div class="team">
+            <div class="members background-green">
+                <div class="img">
+                    <svg width="100" height="100"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                            fill="currentColor" />
+                        <path
+                            d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="teams-desc">
+                    <h2>Nome: João Vitor</h2>
+                    <h3>Função: Diagrama</h3>
+                </div>
+            </div>
+            <div class="members background-blue">
+                <div class="img">
+                    <svg width="100" height="100"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                            fill="currentColor" />
+                        <path
+                            d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="teams-desc">
+                    <h2>Nome: Luan Alves</h2>
+                    <h3>Função: Front End</h3>
+                </div>
+            </div>
+            <div class="members background-green">
+                <div class="img">
+                    <svg width="100" height="100"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                            fill="currentColor" />
+                        <path
+                            d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="teams-desc">
+                    <h2>Nome: Mauro Geraldo</h2>
+                    <h3>Função: Back-End</h3>
+                </div>
+            </div>
+            <div class="members background-blue">
+                <div class="img">
+                    <svg width="100" height="100"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7ZM14 7C14 8.10457 13.1046 9 12 9C10.8954 9 10 8.10457 10 7C10 5.89543 10.8954 5 12 5C13.1046 5 14 5.89543 14 7Z"
+                            fill="currentColor" />
+                        <path
+                            d="M16 15C16 14.4477 15.5523 14 15 14H9C8.44772 14 8 14.4477 8 15V21H6V15C6 13.3431 7.34315 12 9 12H15C16.6569 12 18 13.3431 18 15V21H16V15Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <div class="teams-desc">
+                    <h2>Nome: Isabelly Cristhina</h2>
+                    <h3>Função: Desingner</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
